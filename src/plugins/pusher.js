@@ -15,7 +15,7 @@ try {
     key: process.env.VUE_APP_PUSHER_APP_KEY,
     cluster: 'eu',
     encrypted: true,
-    authEndpoint: 'http://localhost:200/broadcasting/auth',
+    authEndpoint: process.env.VUE_APP_PUSHER_END_POINT,
     auth: {
       headers: {
         Authorization: `Bearer ${CookieService.get(CookieName.TOKEN)}`,

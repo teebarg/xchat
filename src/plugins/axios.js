@@ -4,4 +4,4 @@ import axios from 'axios'
 
 Vue.use(VueAxios, axios)
 
-Vue.axios.defaults.baseURL = 'http://localhost:200/api'
+Vue.axios.defaults.baseURL = process.env.VUE_APP_END_POINT
