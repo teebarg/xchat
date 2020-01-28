@@ -36,7 +36,6 @@ export default new Vuex.Store({
       },
       actions: {
         [MAIN.NOTIFY] ({ commit }, payload) {
-          console.log('nope got here')
           commit(MAIN.NOTIFY, payload)
         },
         [MAIN.SET_LOADING] ({ commit }, payload) {

@@ -5,7 +5,6 @@ import router from '@/router'
 
 // Add axios request interceptor
 axios.interceptors.request.use((config) => {
-  console.log('pppppppppp')
   const token = CookieService.get(CookieName.TOKEN)
   if (token) {
     config.headers['Authorization'] = `Bearer ${token}`

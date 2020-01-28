@@ -31,8 +31,6 @@ export default {
           const tokenId = googleuser.getAuthResponse().access_token
           const type = 'google'
           f({ tokenId, type })
-        }, function (err) {
-          console.log(err)
         }
       )
     },

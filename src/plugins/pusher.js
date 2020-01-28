@@ -29,7 +29,6 @@ try {
     variant: 'danger'
   }
   store.dispatch(`AppStore/${MAIN.NOTIFY}`, payload)
-  console.log('yahhhhh no more breaks')
 }
 
 export default echo

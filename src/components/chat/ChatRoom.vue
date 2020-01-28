@@ -57,13 +57,11 @@
       contact: {
         immediate: false,
         handler (contact) {
-          console.log(echo)
           const target = contact.id
           this.getMessages(target)
           if (echo) {
             echo.private(`message-${this.currentUser.id}-${target}`)
               .listen('MessageSentEvent', (e) => {
-                console.log(e)
                 this.updateMessage({ target: target, payload: e })
               })
           }
