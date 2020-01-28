@@ -1,0 +1,12 @@
+// Your variable overrides
+$body-bg: #FFFFFF;
+$body-color: #4b4b4b;
+$font-size-base: 0.9rem;
+//$line-height-base: 1;
+$font-family-sans-serif: 'Open Sans', sans-serif;
+
+// Bootstrap and its default variables
+@import 'node_modules/bootstrap/scss/bootstrap';
+@import 'node_modules/bootstrap-vue/src/index.scss';
+
+
