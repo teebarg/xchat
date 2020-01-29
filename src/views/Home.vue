@@ -1,7 +1,7 @@
 <template>
   <div class="auth__wrapper">
     <Header :class="{raise: raised}" />
-    <p :style="{marginTop: `${fromTop}px`}" v-scroll="handleScroll">Landing Page</p>
+    <p :style="{marginTop: `${fromTop}px`}" v-scroll="handleScroll">Landing Page On CI</p>
     <Footer />
   </div>
 </template>
